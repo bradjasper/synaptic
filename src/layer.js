@@ -10,7 +10,7 @@ var Neuron  = require('./neuron')
 *******************************************************************************************/
 
 function Layer(size, label) {
-  this.size = size | 0;
+  this.size = size || 0;
   this.list = [];
   this.label = label || null;
   this.connectedTo = [];
