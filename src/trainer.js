@@ -23,7 +23,7 @@ Trainer.prototype = {
     var error = 1;
     var iterations = bucketSize = 0;
     var abort = false;
-    var input, output, target, currentRate;
+    var currentRate;
     var cost = options && options.cost || this.cost || Trainer.cost.MSE;
     var crossValidate = false, testSet, trainSet;
 
